@@ -18,5 +18,6 @@ public class MainClass03 {
 		//참조값에 . 찍어서 toCharArray() 메소드를 호출하면 char 배열이 리턴된다.
 		char[] tch1=d.toCharArray();
 		
+		
 	}
 }

@@ -18,5 +18,14 @@ public class MainClass01 {
 		// (byte) 는 형변환(casting) 연산자 이다.
 		byte num3 = (byte)num1;
 		
+		double num4 = 10.1; //묵시적인 double type
+		double num5 = 10.1d;// 명시적인 double type
+		float num6 = 10.1f; // float는 반드시 명시적으로 만들어야 한다.
+		
+		//double type 변수에  float type 변수에 있는값 대입하기
+		num4=num6;
+		
+		//double type 변수에 있는 값을 float type 에 담을때는 casting 이 필요하다.
+		float num7=(float)num4;
 	}
 }

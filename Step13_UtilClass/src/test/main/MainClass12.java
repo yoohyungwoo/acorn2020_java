@@ -21,6 +21,7 @@ public class MainClass12 {
 		set1.add(20);
 		set1.add(30);
 		set1.add(30);
+		System.out.println(set1);
 		//문자열을 저장할수 있는 HashSet 객체
 		Set<String> set2=new HashSet<>();
 		set2.add("kim");
@@ -28,6 +29,7 @@ public class MainClass12 {
 		set2.add("park");
 		set2.add("lee");
 		set2.add("park");
+		System.out.println(set2);
 		//Car 객체를 저장할수 있는 HashSet 객체
 		Set<Car> set3=new HashSet<>();
 		set3.add(new Car("프라이드"));
@@ -36,7 +38,6 @@ public class MainClass12 {
 		Car car1=new Car("그랜저");
 		set3.add(car1);
 		set3.add(car1);
-	
 	}
 }
 

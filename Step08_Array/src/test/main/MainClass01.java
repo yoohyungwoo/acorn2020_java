@@ -9,7 +9,6 @@ public class MainClass01 {
 		double[] nums2= {10.1, 10.2, 10.3, 10.4, 10.5};
 		// boolean type 5 개를 저장하고 있는 배열
 		boolean[] truth= {true, false, false, true, true};
-		
 		// String type (참조데이터 type) 5 개를 저장하고 있는 배열
 		String[] names= {"김구라","해골","원숭이","주뎅이","덩어리"};
 		

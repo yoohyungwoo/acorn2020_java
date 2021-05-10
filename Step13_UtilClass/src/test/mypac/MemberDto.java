@@ -12,43 +12,47 @@ package test.mypac;
  *   generate 하는 방법: 마우스 우클릭 => Source => Generate Constructor 
  *                                            Generate getters and setters
  */
+
+import java.util.Set;
+
 public class MemberDto {
 	//private 접근 지정자로 필요한 필드를 정의한다.
 	private int num;
 	private String name;
 	private String addr;
+	
 	//default 생성자를 정의한다.
 	public MemberDto() {}
-	//모든 필드의 값을 전달받아서 필드에 저장하는 생성자를 정의한다.
+
 	public MemberDto(int num, String name, String addr) {
 		super();
 		this.num = num;
 		this.name = name;
 		this.addr = addr;
 	}
-	//필드에 접근을 할수 있도록 getter, setter 메소드를 만들어 놓는다.
+
 	public int getNum() {
 		return num;
 	}
+
 	public void setNum(int num) {
 		this.num = num;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getAddr() {
 		return addr;
 	}
+
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}
 	
 }
-
-
-
-
-

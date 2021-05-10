@@ -27,6 +27,7 @@ public class MainClass09 {
 		map3.put("name", "원숭이");
 		map3.put("addr", "동물원");
 		
+		//List's Generic class
 		List<Map<String, Object>> list=new ArrayList<>();
 		list.add(map1);
 		list.add(map2);
@@ -51,8 +52,8 @@ public class MainClass09 {
 		int f=(int)list.get(0).get("num");
 		String g=(String)list.get(0).get("name");
 		String h=(String)list.get(0).get("addr");
-		
 		int i=((String)list.get(0).get("addr")).length();
+		String addr=(String)list.get(0).get("addr");
 	}
 }
 

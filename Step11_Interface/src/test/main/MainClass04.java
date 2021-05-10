@@ -11,10 +11,10 @@ public class MainClass04 {
 			}
 		});
 		
-		Drill d1=()->{
-			System.out.println("벽에 20mm 의 구멍내기");
+		//구현할수 있는 메소드가 1개일때 가능한 문법 (람드함수)
+		Drill d1= ()->{
+			System.out.println("벽에 20mm 구멍내기");
 		};
-		
 		useDrill(d1);
 		useDrill(()->{
 			System.out.println("핸드폰에 1mm 구멍내기");

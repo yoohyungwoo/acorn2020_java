@@ -16,7 +16,7 @@ public class MainClass04 {
 		
 		//p2 는 비어있는(null 이 들어 있는) 상태이기 때문에 
 		//실행시(runtime 시)에 NullPointerException 이 발생한다. 
-		p2.call();
+		//p2.call();
 		
 		//p3 에는 참조값이 들어 있으므로 정상적으로 사용가능 
 	}

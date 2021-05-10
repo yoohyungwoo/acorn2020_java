@@ -7,10 +7,14 @@ public class MainClass08 {
 	public static void main(String[] args) {
 		/*
 		 *  HashMap<key 값의 type, value 값의 type> 
+		 *  
+		 *  key 의 generic class 는String 으로 지정하는것이 일반적이다.
+		 *  value 의 generic class 는 담을 데이터 type 을 지정하면 안된다.
+		 *  여러개의 type 을 섞어서 담을거면 Object로 지정하면 된다.  
 		 */
-		Map<String, Object> map1=new HashMap<>();
-		map1.put("num", 1);
-		map1.put("name", "김구라");
+		Map<String, Object> map1=new HashMap<>(); //Object 를 사용하여 두개의 type을 지정
+		map1.put("num", 1); // int or integer type
+		map1.put("name", "김구라"); //String type
 		map1.put("addr", "노량진");
 		/*
 		 *  value 의 Generic 클래스가 Object 로 지정 되어 있기때문에

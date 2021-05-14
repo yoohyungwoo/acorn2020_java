@@ -73,8 +73,8 @@ public class Quiz03 extends JFrame implements ActionListener{
 		area.setBackground(Color.YELLOW);
 		area.setVisible(false);
 	}
-	// run 했을때 실행순서가 시작 되는 메인 메소드 
-	public static void main(String[] args) {
+	// arun 했을때 실행순서가 시작 되는 메인 메소드 
+	public static void min(String[] args) {
 		//프레임을 만들어서 화면에 띄우는 작업을 한다. 
 		Quiz03 f=new Quiz03();
 		f.setBounds(100, 100, 500, 500);
@@ -99,7 +99,7 @@ public class Quiz03 extends JFrame implements ActionListener{
 	}
 	//파일에 있는 문자열을 읽어와서 출력하는 작업을 하는 메소드
 	public void openContent() {
-		JFileChooser fc=new JFileChooser("c:/acorn2020/myFolder");
+		JFileChooser fc=new JFileChooser("c:/acorn2021204/myFolder");
 		//파일을 open 하는 다이얼로그 띄우기 
 		int result=fc.showOpenDialog(this);	
 		if(result == JFileChooser.APPROVE_OPTION) {
@@ -134,7 +134,7 @@ public class Quiz03 extends JFrame implements ActionListener{
 	public void saveContent() {
 		//JTextArea 에 입력한 문자열을 읽어온다.
 		String content=area.getText();
-		JFileChooser fc=new JFileChooser("c:/acorn2020/myFolder");
+		JFileChooser fc=new JFileChooser("c:/acorn2021204/myFolder");
 		int result=fc.showSaveDialog(this);	
 		if(result == JFileChooser.APPROVE_OPTION) {
 			//새로 만들 예정인 File 객체 의 참조값 얻어오기 

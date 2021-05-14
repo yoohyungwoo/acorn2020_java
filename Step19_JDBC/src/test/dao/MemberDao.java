@@ -25,9 +25,12 @@ public class MemberDao {
 	private static MemberDao dao;
 	
 	//외부에서 객체 생성하지 못하도록 한다. 
-	private MemberDao() {}
+	private MemberDao() {
+		System.out.println("MemberDao 객체가 생성되었습니다.");
+	}
 	
 	//참조값을 리턴해주는 메소드
+	// static 은 오직 하나만 만들어 진다고 생각하면 된다.
 	public static MemberDao getInstance() {
 		if(dao==null) {//최초 호출되면 null 이므로 
 			dao=new MemberDao();//객체를 생성해서 static 필드에 담는다. 
@@ -209,7 +212,7 @@ public class MemberDao {
 		}else {
 			return false;
 		}
-	}	
+	}
 }
 
 

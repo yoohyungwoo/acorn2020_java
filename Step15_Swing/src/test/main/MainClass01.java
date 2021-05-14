@@ -7,7 +7,7 @@ public class MainClass01 {
 	public static void main(String[] args) {
 		//JFrame 객체 생성하고 
 		JFrame f=new JFrame("Hello Frame");
-		//초기 위치와 크기 지정 
+		//초기 위치와 크기 지정  (x좌표, y좌표, 가로폭,세로폭)
 		f.setBounds(100, 100, 500, 500);
 		//프레임을 닫았을때 자동으로 프로세스 종료 되도록 
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,6 +24,7 @@ public class MainClass01 {
 		f.setVisible(true);
 		
 		new MyFrame("나만의 프레임");
+		new MeFrame("형우의 프레임");
 	}
 	
 	public static class MyFrame extends JFrame{
@@ -32,6 +33,19 @@ public class MainClass01 {
 			super(title);
 			//초기화 작업
 			setBounds(200, 200, 500, 500);
+			setDefaultCloseOperation(EXIT_ON_CLOSE);
+			setVisible(true);
+			
+			setLayout(null);
+			JButton btn=new JButton("눌러보셈");
+			btn.setBounds(10, 10, 100, 40);
+			add(btn);
+		}
+	}
+	public static class MeFrame extends JFrame{
+		public MeFrame(String fact) {
+			super(fact);
+			setBounds(100,100,400,400);
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			setVisible(true);
 			

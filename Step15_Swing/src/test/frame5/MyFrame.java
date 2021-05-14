@@ -21,6 +21,7 @@ public class MyFrame extends JFrame{
 		//프레임에 버튼 추가하기 ( FlowLayout 의 영향을 받는다 )
 		add(sendBtn);
 		add(removeBtn);
+
 		
 		//ActionListener 인터페이스 type  의 참조값 
 		ActionListener listener=new ActionListener() {

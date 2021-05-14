@@ -17,12 +17,14 @@ public class MainClass03 {
 			e.printStackTrace();
 		}
 		
-		File f1=new File("c:/acorn2020/myFolder/test.txt");
+		File f1=new File("c:/acorn2021204/myFolder/test.txt");
+		
 		try {
 			f1.createNewFile();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		
 		System.out.println("main 메소드가 종료 됩니다.");
 	}

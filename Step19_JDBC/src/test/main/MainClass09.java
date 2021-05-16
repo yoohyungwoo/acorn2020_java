@@ -9,9 +9,9 @@ import test.util.DBConnect;
 public class MainClass09 {
 	public static void main(String[] args) {
 		//수정할 회원의 정보
-		int num=1;
-		String name="이정호";
-		String addr="독산동";
+		int num=50;
+		String name="덩어리";
+		String addr="상도동";
 		//MemberDto 객체에 수정할 회원의 정보를 담아서 
 //		MemberDto dto=new MemberDto();
 //		dto.setNum(num);
